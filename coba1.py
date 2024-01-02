@@ -13,16 +13,16 @@ defaults = {
     'top_p': 0.95,
 }
 
-st.title('Code explainer')
-st.write('You can ask me to code anything')
+st.title('Ask Me')
+st.write('You can ask anythings code')
 final_response = None
 # Creating a side panel for inputs
 with st.sidebar:
-    st.write("## Code Generator Settings")
+    st.write("## Input Code")
     # Create a dropdown for selecting the programming language
    
     # Create a text input for the prompt
-    prompt = st.text_area("What do you want to code?")
+    prompt = st.text_area("What`s your problem")
     # When the 'Generate' button is pressed, generate the text
     if st.button('Generate'):
         formatted_prompt = f"explain this code with details {prompt}"
